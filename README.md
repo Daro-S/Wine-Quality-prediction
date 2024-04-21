@@ -1,3 +1,17 @@
+### WINE-Quality-Prediction
+
+This project is built for learning purpose and practicing in some core feature of data science project :
+
+1. Project Structure (moduluar)
+2. Setting up virtual Environment
+3. Logging and Exceptions
+4. EDA
+5. Model Training
+6. Evaluation-Production (MLflow integrated)
+7. Data version control (DVC)
+
+# Stay strong & Keep learning, Daro-Sim 21/04/2024
+
 ```bash
 python -m venv vwineQualityPre
 ```
