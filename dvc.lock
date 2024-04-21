@@ -86,9 +86,28 @@ stages:
     params:
       params.yaml:
         ElasticNet.alpha: 0.2
-        ElasticNet.l1_ratio: 0.1
+        ElasticNet.l1_ratio: 0.01
     outs:
     - path: artifacts/model_trainer/model.joblib
       hash: md5
-      md5: 53717a967ed1794dc01d27ee4031c2f4
+      md5: e0eda2816c3c04835864dc2e7d1dbb4a
       size: 1279
+  model_evaluation:
+    cmd: python src/wineQualityPre/pipeline/stage_05_model_evaluation.py
+    deps:
+    - path: artifacts/data_transformation/test.csv
+      hash: md5
+      md5: c5712383095bf224c6289db5028aae9b
+      size: 23860
+    - path: artifacts/model_trainer/model.joblib
+      hash: md5
+      md5: e0eda2816c3c04835864dc2e7d1dbb4a
+      size: 1279
+    - path: config/config.yaml
+      hash: md5
+      md5: 7545ca01add96aaa832fc1a0cea8c905
+      size: 1006
+    - path: src/wineQualityPre/pipeline/stage_05_model_evaluation.py
+      hash: md5
+      md5: 55dbfe434dabe16e7aa51ec24091ffeb
+      size: 906

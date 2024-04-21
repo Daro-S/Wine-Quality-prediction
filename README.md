@@ -21,3 +21,15 @@ pip install -r requirements.txt
 7. Update the pipeline
 8. Update the main.py
 9. Update the app.py
+
+## Mlflow UI
+
+## Dagshub remote server
+
+Run this to export as env variables:
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/darosim.itdev/Wine-Quality-prediction.mlflow
+
+export MLFLOW_TRACKING_USERNAME=darosim.itdev
+
+export MLFLOW_TRACKING_PASSWORD=c63426cbd6f6a12861a78c26d0cb97a9235a1150
